@@ -1,0 +1,43 @@
+﻿@model string
+
+@{
+    ViewData["Title"] = "AI Chat";
+    Layout = null;
+}
+
+<link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+<link href="~/StyleSheet.css" rel="stylesheet" />
+
+<div class="container mt-5">
+    <div class="chat-box">
+        <div class="chat-header">
+            🤖 OpenAI Chat
+        </div>
+
+        <form asp-action="Index" method="post" class="chat-input">
+            <input type="text" name="prompt" class="form-control" placeholder="Mesajınızı yazın..." required />
+            <button type="submit" class="btn btn-primary">Gönder</button>
+        </form>
+
+        @if (!string.IsNullOrEmpty(Model))
+        {
+            <div class="chat-bubble user">
+                @Context.Request.Form["prompt"]
+            </div>
+            <div class="chat-bubble ai">
+                @Model
+            </div>
+        }
+
+        @if (ViewBag.errorMessage != null)
+        {
+            <div class="alert alert-danger mt-3">
+                <strong>@ViewBag.errorMessage</strong><br />
+                @if (ViewBag.errorDetails != null)
+                {
+                    <pre>@ViewBag.errorDetails</pre>
+                }
+            </div>
+        }
+    </div>
+</div>
