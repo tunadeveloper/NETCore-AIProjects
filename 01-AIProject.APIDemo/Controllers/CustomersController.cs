@@ -23,7 +23,7 @@ namespace _01_AIProject.APIDemo.Controllers
             return Ok(values);
         }
 
-        [HttpPost("CreateCustomer")]
+        [HttpPost]
         public IActionResult CreateCustomer(Customer customer)
         {
             _context.Customers.Add(customer);
@@ -31,21 +31,21 @@ namespace _01_AIProject.APIDemo.Controllers
             return Ok("Müşteri Başarıyla Eklendi!");
         }
 
-        [HttpPut("UpdateCustomer")]
+        [HttpPut]
         public IActionResult UpdateCustomer(Customer customer)
         {
             _context.Customers.Update(customer);
             _context.SaveChanges();
-            return Ok("Müşteri Başarıyla Güncellendi!");
+            return Ok("Müşteri başarıyla güncellendi");
         }
 
-        [HttpDelete("DeleteCustomer")]
+        [HttpDelete]
         public IActionResult DeleteCustomer(int id)
         {
             var value = _context.Customers.Find(id);
             _context.Customers.Remove(value);
             _context.SaveChanges();
-            return Ok("Müşteri Başarıyla Silindi!");
+            return Ok("Müşteri başarıyla silindi");
         }
 
         [HttpGet("GetById")]
