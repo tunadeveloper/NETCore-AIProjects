@@ -1,0 +1,30 @@
+﻿@{
+    ViewData["Title"] = "DALL·E Görüntü Oluşturucu";
+    Layout = null;
+}
+@model string
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="~/stylesheet.css" rel="stylesheet" />
+
+<div class="container d-flex justify-content-center align-items-center vh-100">
+    <div class="card p-5 w-75">
+        <h2 class="text-center mb-4">DALL·E Görüntü Oluşturucu</h2>
+
+        <form method="get">
+            <div class="mb-3">
+                <input type="text" name="prompts" class="form-control form-control-lg" placeholder="İsteğinizi buraya yazın..." required />
+            </div>
+            <div class="d-grid">
+                <button type="submit" class="btn btn-primary btn-lg">Görsel Oluştur</button>
+            </div>
+        </form>
+
+        @if (!string.IsNullOrEmpty(Model))
+        {
+            <div class="image-container text-center">
+                <img src="@Model" alt="Generated Image"/>
+            </div>
+        }
+    </div>
+</div>

@@ -1,0 +1,25 @@
+﻿body {
+    background: #f5f7fa;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.card {
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.btn-primary {
+    background: #6f42c1;
+    border: none;
+}
+
+    .btn-primary:hover {
+        background: #5a32a3;
+    }
+
+.image-container img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-top: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
