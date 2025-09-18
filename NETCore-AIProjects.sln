@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05-AIProject.OpenAIWhisperA
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06-AIProject.OpenAIDallEImageGeneration", "06-AIProject.OpenAIDallEImageGeneration\06-AIProject.OpenAIDallEImageGeneration.csproj", "{741809E0-A963-4E6B-A8E8-DA77AE69C5F9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07-AIProject.TesseractOcr", "07-AIProject.TesseractOcr\07-AIProject.TesseractOcr.csproj", "{6928B7ED-0F87-4952-9BA3-7A66E6545E0F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{741809E0-A963-4E6B-A8E8-DA77AE69C5F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{741809E0-A963-4E6B-A8E8-DA77AE69C5F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{741809E0-A963-4E6B-A8E8-DA77AE69C5F9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6928B7ED-0F87-4952-9BA3-7A66E6545E0F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6928B7ED-0F87-4952-9BA3-7A66E6545E0F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6928B7ED-0F87-4952-9BA3-7A66E6545E0F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6928B7ED-0F87-4952-9BA3-7A66E6545E0F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
