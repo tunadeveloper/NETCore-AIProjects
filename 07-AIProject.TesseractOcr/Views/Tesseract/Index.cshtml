@@ -1,0 +1,62 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Tesseract OCR</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 min-h-screen flex items-center justify-center">
+
+    <div class="bg-white shadow-2xl rounded-2xl p-8 w-full max-w-2xl">
+        <h1 class="text-2xl font-bold text-purple-700 text-center mb-6">📄 Görselden Metin Okuma (OCR)</h1>
+
+        <form asp-action="Index" asp-controller="Tesseract" method="post" enctype="multipart/form-data"
+              class="flex flex-col items-center gap-4 w-full">
+
+            <div class="w-full flex items-center justify-between bg-white border border-gray-300 rounded-lg shadow-sm overflow-hidden">
+                <input type="file" name="imageFile" accept="image/*"
+                       class="hidden" id="fileUpload" onchange="document.getElementById('fileName').innerText = this.files[0]?.name || 'Dosya seçilmedi';" />
+
+                <span id="fileName" class="px-4 py-2 text-gray-500">Dosya seçilmedi</span>
+
+                <label for="fileUpload"
+                       class="px-4 py-2 bg-purple-600 hover:bg-purple-700 text-white font-semibold cursor-pointer transition">
+                    Gözat
+                </label>
+            </div>
+
+            <button type="submit"
+                    class="px-6 py-2 bg-purple-600 hover:bg-purple-700 text-white font-semibold rounded-lg shadow-md transition">
+                Tara ve Metni Çıkar
+            </button>
+        </form>
+
+        @if (ViewBag.ImagePath != null)
+        {
+            <div class="mt-6">
+                <p class="font-semibold text-gray-700">📌 Yüklenen Görsel:</p>
+                <img src="@ViewBag.ImagePath" alt="Yüklenen Görsel" class="rounded-lg shadow-md mt-2 max-h-64" />
+            </div>
+        }
+
+        @if (ViewBag.Text != null)
+        {
+            <div class="mt-6">
+                <p class="font-semibold text-gray-700">✅ Okunan Metin:</p>
+                <pre class="bg-gray-50 border border-gray-200 rounded-lg p-4 mt-2 whitespace-pre-wrap text-gray-800">@ViewBag.Text</pre>
+            </div>
+        }
+
+        @if (ViewBag.Error != null)
+        {
+            <div class="mt-6 text-red-600 font-semibold">@ViewBag.Error</div>
+        }
+    </div>
+
+</body>
+</html>
