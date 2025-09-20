@@ -1,1 +1,1 @@
-## NETCore-AIProjects!
+## NETCore-AIProjects
