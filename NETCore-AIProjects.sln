@@ -21,6 +21,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "08-AIProject-GoogleCloudVis
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "09-AIProject-OpenAITranslate", "09-AIProject-OpenAITranslate\09-AIProject-OpenAITranslate.csproj", "{C8F718D6-0E5B-4B41-ADBD-FD5DEA321FE5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "10-AIProject-TextToSpeech", "10-AIProject-TextToSpeech\10-AIProject-TextToSpeech.csproj", "{AB7F5576-1E2C-459A-8166-C97218A1F98E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +65,10 @@ Global
 		{C8F718D6-0E5B-4B41-ADBD-FD5DEA321FE5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C8F718D6-0E5B-4B41-ADBD-FD5DEA321FE5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C8F718D6-0E5B-4B41-ADBD-FD5DEA321FE5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AB7F5576-1E2C-459A-8166-C97218A1F98E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AB7F5576-1E2C-459A-8166-C97218A1F98E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AB7F5576-1E2C-459A-8166-C97218A1F98E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AB7F5576-1E2C-459A-8166-C97218A1F98E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
