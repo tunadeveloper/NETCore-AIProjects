@@ -27,7 +27,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "11-AIProject-TextToSpeechWi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "12-AIProject-SentimentAIApp", "12-AIProject-SentimentAIApp\12-AIProject-SentimentAIApp.csproj", "{AC418377-EB6C-46B6-8554-F87903EBE8FD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "13-AIProject-SentimentWithDegreeAIApp", "13-AIProject-SentimentWithDegreeAIApp\13-AIProject-SentimentWithDegreeAIApp.csproj", "{03A84DDF-C5E6-4234-93D0-1C87CB8A4539}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "14-AIProject-SentimentWithDegreeAIApp", "13-AIProject-SentimentWithDegreeAIApp\14-AIProject-SentimentWithDegreeAIApp.csproj", "{03A84DDF-C5E6-4234-93D0-1C87CB8A4539}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "13-AIProject-ArticleSummarizeAI", "13-AIProject-ArticleSummarizeAI\13-AIProject-ArticleSummarizeAI.csproj", "{82A5A95A-A3D2-4FF1-9CF7-661A30B152E9}"
 EndProject
