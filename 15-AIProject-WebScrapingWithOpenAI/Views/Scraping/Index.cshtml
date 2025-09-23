@@ -1,0 +1,42 @@
+﻿@{
+    ViewBag.Title = "Web Scraping With OpenAI";
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="utf-8" />
+    <title>@ViewBag.Title</title>
+</head>
+<body style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f5f5f5; margin:0; padding:0;">
+    <div style="max-width: 800px; margin: 50px auto; background-color: #fff; padding: 30px; border-radius: 12px; box-shadow: 0 8px 20px rgba(0,0,0,0.1);">
+        <h1 style="text-align: center; color: #4B0082;">Web Scraping & AI Analizi</h1>
+
+        <form method="get" action="/Scraping/Index" style="margin-top: 20px; display: flex; gap: 10px;">
+            <input type="text" name="inputUrl" placeholder="İncelenecek Web Sitesi URL'si"
+                   style="flex:1; padding: 10px 15px; border-radius: 8px; border: 1px solid #ccc; font-size: 16px;" />
+            <button type="submit"
+                    style="background-color: #4B0082; color: #fff; border: none; padding: 10px 20px; border-radius: 8px; cursor: pointer; font-size: 16px;">
+                Analiz Et
+            </button>
+        </form>
+
+        @if (ViewBag.Text != null)
+        {
+            <div style="margin-top: 30px; background-color: #eae6f8; padding: 20px; border-radius: 10px; white-space: pre-wrap; font-size: 15px; line-height: 1.5;">
+                <strong>Sonuç:</strong>
+                <p>@ViewBag.Text</p>
+            </div>
+        }
+
+        @if (ViewBag.Error != null)
+        {
+            <div style="margin-top: 30px; background-color: #ffe6e6; padding: 20px; border-radius: 10px; color: #b00000; font-size: 15px;">
+                <strong>Hata:</strong>
+                <p>@ViewBag.Error</p>
+            </div>
+        }
+    </div>
+</body>
+</html>

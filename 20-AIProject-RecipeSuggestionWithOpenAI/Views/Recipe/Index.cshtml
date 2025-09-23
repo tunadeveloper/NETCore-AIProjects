@@ -1,0 +1,54 @@
+﻿@{
+    ViewData["Title"] = "AI Tarif Önerisi";
+    var recipe = ViewBag.recipe as string;
+    Layout = null;
+}
+
+<div style="max-width:900px;margin:50px auto;font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+
+    <h1 style="text-align:center;color:#FF6F61;font-size:2.5em;margin-bottom:30px;">
+        🍳 AI Tarif Önerisi
+    </h1>
+
+    <div style="background: linear-gradient(135deg, #FF9A8B 0%, #FF6F61 100%);
+                padding:25px;border-radius:15px;box-shadow:0 8px 20px rgba(0,0,0,0.2);
+                margin-bottom:40px;">
+        <form method="post" style="display:flex;flex-direction:column;gap:15px;">
+            <input type="text" name="ingredients" placeholder="Malzemelerinizi girin (örn: tavuk, patates, soğan)"
+                   style="padding:15px;border-radius:10px;border:none;font-size:16px;outline:none;" />
+            <button type="submit"
+                    style="padding:15px;border:none;border-radius:10px;
+                           background:#fff;color:#FF6F61;font-weight:bold;
+                           font-size:16px;cursor:pointer;transition:0.3s;">
+                Tarif Oluştur
+            </button>
+        </form>
+    </div>
+
+    @if (!string.IsNullOrEmpty(recipe))
+    {
+        <div style="background:#fff3e0;padding:25px;border-radius:15px;
+                    box-shadow:0 8px 20px rgba(0,0,0,0.1);animation:fadeIn 0.5s ease-in-out;">
+            <h2 style="color:#FF6F61;margin-top:0;">🍽 Oluşturulan Tarif</h2>
+            <p style="line-height:1.7;color:#333;white-space:pre-line;font-size:16px;">@recipe</p>
+        </div>
+    }
+
+</div>
+
+<style>
+    @@keyframes fadeIn {
+        from
+
+    {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    }
+</style>

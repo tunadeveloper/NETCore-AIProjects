@@ -1,0 +1,47 @@
+﻿@{
+    ViewData["Title"] = "PDF Analiz";
+    Layout = null;
+}
+
+<div style="max-width: 800px; margin: 40px auto; padding: 25px; border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15); font-family: Arial, sans-serif; background: #fff;">
+
+    <h2 style="text-align: center; color: #4B0082; margin-bottom: 25px;">
+        📄 PDF Analiz ve Özetleme
+    </h2>
+
+    <form asp-action="Index" method="post" enctype="multipart/form-data"
+          style="display: flex; flex-direction: column; gap: 15px;">
+        <label style="font-weight: bold; color: #333;">
+            PDF Yükle:
+            <input type="file" name="pdfFile" accept=".pdf"
+                   style="width: 100%; padding: 10px; border: 1px solid #ccc;
+                          border-radius: 8px; margin-top: 5px;" />
+        </label>
+
+        <button type="submit"
+                style="padding: 12px; border: none; border-radius: 8px;
+                       background: #4B0082; color: white; font-weight: bold;
+                       cursor: pointer; transition: 0.3s;">
+            Analiz Et
+        </button>
+    </form>
+
+    @if (ViewBag.Text != null)
+    {
+        <div style="margin-top: 30px; padding: 20px; border-radius: 8px;
+                    background: #F3F0FA; color: #222; white-space: pre-line;
+                    border: 1px solid #ddd;">
+            <h3 style="color: #4B0082; margin-bottom: 10px;">🔎 AI Analizi</h3>
+            <p>@ViewBag.Text</p>
+        </div>
+    }
+
+    @if (ViewBag.Error != null)
+    {
+        <div style="margin-top: 30px; padding: 20px; border-radius: 8px;
+                    background: #FFF0F0; color: #b00020; border: 1px solid #f5c2c7;">
+            <strong>Hata:</strong> @ViewBag.Error
+        </div>
+    }
+</div>

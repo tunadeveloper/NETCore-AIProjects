@@ -1,0 +1,44 @@
+﻿@{
+    var summaries = ViewBag.Summaries as List<(string Title, string Summary)>;
+    Layout = null;
+}
+
+<div style="max-width:900px;margin:40px auto;font-family:Arial,sans-serif;">
+
+    <h2 style="text-align:center;color:#4a148c;margin-bottom:25px;">
+        📰 AI ile Haber Özetleme
+    </h2>
+
+    <form method="post" style="display:flex;gap:10px;justify-content:center;margin-bottom:30px;">
+        <input type="text" name="rssUrl" placeholder="RSS adresi giriniz (örn: https://www.sozcu.com.tr/rss/tum-haberler.xml)"
+               style="flex:1;padding:12px;border:1px solid #ccc;border-radius:8px;font-size:14px;" />
+        <button type="submit"
+                style="padding:12px 20px;background:#4a148c;color:#fff;border:none;border-radius:8px;
+                       cursor:pointer;font-weight:bold;transition:0.3s;">
+            Analiz Et
+        </button>
+    </form>
+
+    @if (ViewBag.Error != null)
+    {
+        <div style="background:#ffe6e6;color:#b00020;padding:15px;border-radius:8px;text-align:center;margin-bottom:20px;">
+            <strong>@ViewBag.Error</strong>
+        </div>
+    }
+
+    @if (summaries != null && summaries.Any())
+    {
+        foreach (var item in summaries)
+        {
+            <div style="background:#f9f9f9;padding:20px;border-radius:10px;margin-bottom:20px;
+                        box-shadow:0 4px 12px rgba(0,0,0,0.1);">
+                <h3 style="color:#4a148c;margin-top:0;">@item.Title</h3>
+                <p style="color:#333;line-height:1.6;">@item.Summary</p>
+            </div>
+        }
+    }
+    else if (ViewBag.Error == null)
+    {
+        <p style="text-align:center;color:gray;">Henüz özetlenecek haber yok. RSS adresi giriniz.</p>
+    }
+</div>

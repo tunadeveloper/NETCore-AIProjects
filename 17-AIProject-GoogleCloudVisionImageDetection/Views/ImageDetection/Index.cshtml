@@ -1,0 +1,40 @@
+﻿@{
+    Layout = null;
+}
+
+<div style="max-width: 700px; margin: 40px auto; padding: 20px; border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1); font-family: Arial, sans-serif;">
+
+    <h2 style="text-align:center; color:#2c3e50; margin-bottom:20px;">
+        🖼️ Google Vision API - Görsel Nesne Tespiti
+    </h2>
+
+    <form asp-action="Index" method="post" enctype="multipart/form-data"
+          style="display:flex; flex-direction:column; gap:15px;">
+        <input type="file" name="imageFile" accept="image/*"
+               style="padding:10px; border:1px solid #ccc; border-radius:6px;" />
+
+        <button type="submit"
+                style="padding:12px; background:#2c3e50; color:white; border:none;
+                       border-radius:6px; cursor:pointer;">
+            Analiz Et
+        </button>
+    </form>
+
+    @if (ViewBag.Result != null)
+    {
+        <div style="margin-top:20px; padding:15px; border:1px solid #ccc;
+                    border-radius:6px; background:#f8f9fa; white-space:pre-wrap;">
+            <h3 style="color:#2c3e50;">🔎 Sonuç:</h3>
+            <pre>@ViewBag.Result</pre>
+        </div>
+    }
+
+    @if (ViewBag.Error != null)
+    {
+        <div style="margin-top:20px; padding:15px; border:1px solid #e74c3c;
+                    border-radius:6px; background:#fdd; color:#c0392b;">
+            <strong>Hata:</strong> @ViewBag.Error
+        </div>
+    }
+</div>
