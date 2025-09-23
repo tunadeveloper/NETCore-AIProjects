@@ -25,6 +25,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "10-AIProject-TextToSpeech",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "11-AIProject-TextToSpeechWithOpenAI", "11-AIProject-TextToSpeechWithOpenAI\11-AIProject-TextToSpeechWithOpenAI.csproj", "{C32DCEB1-A551-4A3D-82E4-2AB5016408B4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "12-AIProject-SentimentAIApp", "12-AIProject-SentimentAIApp\12-AIProject-SentimentAIApp.csproj", "{AC418377-EB6C-46B6-8554-F87903EBE8FD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -75,6 +77,10 @@ Global
 		{C32DCEB1-A551-4A3D-82E4-2AB5016408B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C32DCEB1-A551-4A3D-82E4-2AB5016408B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C32DCEB1-A551-4A3D-82E4-2AB5016408B4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AC418377-EB6C-46B6-8554-F87903EBE8FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC418377-EB6C-46B6-8554-F87903EBE8FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC418377-EB6C-46B6-8554-F87903EBE8FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC418377-EB6C-46B6-8554-F87903EBE8FD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
