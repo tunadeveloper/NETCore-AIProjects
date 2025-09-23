@@ -12,12 +12,14 @@ namespace _14_AIProject_ArticleSummarizeAI.Controllers
         {
             if (!string.IsNullOrWhiteSpace(input))
             {
-                string shortSummary = await SummarizeText(input, "short");
-                string mediumSummary = await SummarizeText(input, "medium");
-                string detailSummary = await SummarizeText(input, "detailed");
+                ViewBag.Input = input;
+                ViewBag.ShortSummary = await SummarizeText(input, "short");
+                ViewBag.MediumSummary = await SummarizeText(input, "medium");
+                ViewBag.DetailedSummary = await SummarizeText(input, "detailed");
             }
             return View();
         }
+
 
         private async Task<string> SummarizeText(string text, string level)
         {

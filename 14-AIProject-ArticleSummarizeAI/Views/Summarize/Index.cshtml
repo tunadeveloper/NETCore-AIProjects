@@ -1,0 +1,57 @@
+﻿@{
+    ViewData["Title"] = "Article Summarize AI";
+    Layout = null;
+}
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+<div class="container py-5" style="background: linear-gradient(135deg, #f5f7fa, #c3cfe2); border-radius: 15px; padding: 40px;">
+    <h1 class="text-center mb-5" style="color: #4B0082; font-weight: bold;">Article Summarize AI</h1>
+
+    <form method="get" asp-action="Index" class="mb-5">
+        <textarea class="form-control mb-3" name="input" rows="6" placeholder="Metni buraya yapıştırın..."
+                  style="border-radius: 10px; border: 2px solid #4B0082; padding: 15px; font-size: 1rem;">@ViewBag.Input</textarea>
+        <button type="submit" class="btn w-100" style="background-color: #8A2BE2; color: white; font-weight: bold; padding: 12px; border-radius: 10px; transition: 0.3s;"
+                onmouseover="this.style.backgroundColor='#6A1FB5';" onmouseout="this.style.backgroundColor='#8A2BE2';">
+            Özetle
+        </button>
+    </form>
+
+    @if (ViewBag.Input != null)
+    {
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card h-100 shadow" style="border-radius: 15px; background-color: #E6E6FA; transition: 0.3s;"
+                     onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0 10px 20px rgba(0,0,0,0.3)';"
+                     onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 4px 10px rgba(0,0,0,0.2)';">
+                    <div class="card-body">
+                        <h5 class="card-title text-center" style="color: #4B0082; font-weight: bold;">Kısa Özet</h5>
+                        <p class="card-text" style="white-space: pre-wrap;">@ViewBag.ShortSummary</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card h-100 shadow" style="border-radius: 15px; background-color: #D8BFD8; transition: 0.3s;"
+                     onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0 10px 20px rgba(0,0,0,0.3)';"
+                     onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 4px 10px rgba(0,0,0,0.2)';">
+                    <div class="card-body">
+                        <h5 class="card-title text-center" style="color: #4B0082; font-weight: bold;">Orta Uzunlukta Özet</h5>
+                        <p class="card-text" style="white-space: pre-wrap;">@ViewBag.MediumSummary</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card h-100 shadow" style="border-radius: 15px; background-color: #BA55D3; color: white; transition: 0.3s;"
+                     onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0 10px 20px rgba(0,0,0,0.3)';"
+                     onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 4px 10px rgba(0,0,0,0.2)';">
+                    <div class="card-body">
+                        <h5 class="card-title text-center" style="font-weight: bold;">Detaylı Özet</h5>
+                        <p class="card-text" style="white-space: pre-wrap;">@ViewBag.DetailedSummary</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+</div>
