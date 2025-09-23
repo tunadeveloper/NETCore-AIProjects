@@ -29,6 +29,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "12-AIProject-SentimentAIApp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "13-AIProject-SentimentWithDegreeAIApp", "13-AIProject-SentimentWithDegreeAIApp\13-AIProject-SentimentWithDegreeAIApp.csproj", "{5DDB7A48-BB12-4152-87AA-05266C19C50F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "14-AIProject-ArticleSummarizeAI", "14-AIProject-ArticleSummarizeAI\14-AIProject-ArticleSummarizeAI.csproj", "{235DA390-8222-4EF7-A99C-666950C78B92}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -87,6 +89,10 @@ Global
 		{5DDB7A48-BB12-4152-87AA-05266C19C50F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5DDB7A48-BB12-4152-87AA-05266C19C50F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5DDB7A48-BB12-4152-87AA-05266C19C50F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{235DA390-8222-4EF7-A99C-666950C78B92}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{235DA390-8222-4EF7-A99C-666950C78B92}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{235DA390-8222-4EF7-A99C-666950C78B92}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{235DA390-8222-4EF7-A99C-666950C78B92}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
