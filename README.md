@@ -9,7 +9,7 @@ Her proje, **NLP (Doğal Dil İşleme)**, **Görüntü İşleme**, **Ses İşlem
 ---
 
 ## 🚀 Teknolojiler
-- **Backend:** .NET 6-7-9, ASP.NET Core, Entity Framework Core  
+- **Backend:** .NET 6-7-9, Entity Framework Core  
 - **AI Servisleri:** OpenAI (GPT, Whisper, DALL·E), Google Cloud Vision, Tesseract OCR  
 - **Veritabanı:** SQL Server  
 - **Diğer:** Swagger, HtmlAgilityPack, PdfPig, Newtonsoft.Json, System.Speech, RapidAPI
