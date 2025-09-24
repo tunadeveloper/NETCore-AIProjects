@@ -43,32 +43,6 @@ Her proje, **NLP (Doğal Dil İşleme)**, **Görüntü İşleme**, **Ses İşlem
 
 ---
 
-## 🎯 Kategoriler
-
-### 🔹 Doğal Dil İşleme (NLP)  
-- Sohbet uygulamaları  
-- Çeviri  
-- Duygu analizi  
-- Makale & haber özetleme  
-- Hikaye ve içerik üretimi  
-
-### 🔹 Görüntü İşleme  
-- OCR (Optical Character Recognition)  
-- Görüntü analizi  
-- Görsel üretimi  
-- Görüntü tespiti  
-
-### 🔹 Ses İşleme  
-- Ses → Metin (Speech-to-Text)  
-- Metin → Ses (Text-to-Speech)  
-
-### 🔹 Veri Analizi  
-- Web scraping  
-- PDF analizi  
-- Tarif önerisi  
-
----
-
 ## 📂 Proje Görselleri
 
 
@@ -108,14 +82,14 @@ Her proje, **NLP (Doğal Dil İşleme)**, **Görüntü İşleme**, **Ses İşlem
 ---
 
 ### 🔹 [06. AIProject.OpenAIDallEImageGeneration](./06-AIProject.OpenAIDallEImageGeneration)  
-.NET 9.0 ve Google.Cloud.Vision.V1 ile OpenAI DALL·E kullanarak görsel üretimi gerçekleştirdim.  
+.NET 9.0 ile OpenAI DALL·E kullanarak görsel üretimi gerçekleştirdim.  
 <br>
 <img src="https://github.com/user-attachments/assets/f930f64b-9f59-4f88-8a00-d6cd2c8d46b2" />
 
 ---
 
 ### 🔹 [07. AIProject.TesseractOcr](./07-AIProject.TesseractOcr)  
-.NET 9.0, Tesseract ve Google Cloud Vision kullanarak görsellerden metin çıkardım (OCR).  
+.NET 9.0, Tesseract kullanarak görsellerden metin çıkardım (OCR).  
 <br>
 <img src="https://github.com/user-attachments/assets/89f59541-6c6e-40cc-b436-054fac5562ea" />
 
@@ -129,7 +103,7 @@ Her proje, **NLP (Doğal Dil İşleme)**, **Görüntü İşleme**, **Ses İşlem
 ---
 
 ### 🔹 [09. AIProject.OpenAITranslate](./09-AIProject.OpenAITranslate)  
-.NET 9.0 ve OpenAI GPT modelleriyle çeviri uygulaması geliştirdim.  
+.NET 9.0 ve OpenAI GPT çeviri uygulaması geliştirdim.  
 <br>
 <img src="https://github.com/user-attachments/assets/79f82a6a-a6c6-4567-bcb3-06d3c5a3b35a" />
 
@@ -138,6 +112,7 @@ Her proje, **NLP (Doğal Dil İşleme)**, **Görüntü İşleme**, **Ses İşlem
 ### 🔹 [10. AIProject.TextToSpeech](./10-AIProject.TextToSpeech)  
 .NET 7.0 ve System.Speech kullanarak metin okuma (TTS) uygulaması yaptım.  
 <br>
+
 https://github.com/user-attachments/assets/1e588865-4304-4d33-8f8f-5f913a401946
 
 ---
@@ -145,6 +120,7 @@ https://github.com/user-attachments/assets/1e588865-4304-4d33-8f8f-5f913a401946
 ### 🔹 [11. AIProject.TextToSpeechWithOpenAI](./11-AIProject.TextToSpeechWithOpenAI)  
 .NET 7.0 ve OpenAI entegrasyonu kullanarak AI destekli metin okuma uygulaması geliştirdim.  
 <br>
+
 https://github.com/user-attachments/assets/a5c5b737-666a-411e-b675-a0862d55f8da
 
 ---
@@ -152,6 +128,7 @@ https://github.com/user-attachments/assets/a5c5b737-666a-411e-b675-a0862d55f8da
 ### 🔹 [12. AIProject.SentimentAIApp](./12-AIProject.SentimentAIApp)  
 .NET 7.0 kullanarak OpenAI ile temel duygu analizi uygulaması yaptım.  
 <br>
+
 https://github.com/user-attachments/assets/f8a196ef-28a3-41ed-8c59-cdaed3fa3412
 
 ---
@@ -159,6 +136,7 @@ https://github.com/user-attachments/assets/f8a196ef-28a3-41ed-8c59-cdaed3fa3412
 ### 🔹 [13. AIProject.SentimentWithDegreeAIApp](./13-AIProject.SentimentWithDegreeAIApp)  
 .NET 7.0'da daha detaylı (derecelendirme) duygu analizi uygulaması geliştirdim.  
 <br>
+
 https://github.com/user-attachments/assets/54893d5f-8587-4e2a-9e63-66ee84b91aa7
 
 ---
@@ -210,4 +188,3 @@ https://github.com/user-attachments/assets/54893d5f-8587-4e2a-9e63-66ee84b91aa7
 <br>
 <img src="https://github.com/user-attachments/assets/1d342a70-7194-4595-a7fa-0fdf72bb1c51" />
 
----
